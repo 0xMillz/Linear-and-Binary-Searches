@@ -9,33 +9,30 @@ beforeEach(function(){
 
 describe("#linearSearch", function(){
   it("finds items in an array of positive numbers", function(){
-
+    expect(searchAlgorithms.linearSearch(positiveArr,3)).toEqual(2);
   });
   it("finds items in an array of negative numbers", function(){
-
+    expect(searchAlgorithms.linearSearch(negativeArr,-2)).toEqual(3);
   });
   it("finds items in an array of non-integers", function(){
-
+    expect(searchAlgorithms.linearSearch(decimalArr,1.1)).toEqual(0);
   });
   it("returns null when the item is not found", function(){
-
+    expect(searchAlgorithms.linearSearch(decimalArr,-1)).toEqual(-1);
   });
 });
 
 describe("#binarySearch", function(){
-  it("finds items in an array of positive numbers", function(){
-
+   it("finds items in an array of positive numbers", function(){
+    expect(searchAlgorithms.binarySearch(positiveArr,3)).toEqual(2);
   });
   it("finds items in an array of negative numbers", function(){
-
+    expect(searchAlgorithms.binarySearch(negativeArr,-2)).toEqual(3);
   });
   it("finds items in an array of non-integers", function(){
-
+    expect(searchAlgorithms.binarySearch(decimalArr,1.1)).toEqual(0);
   });
-  it("finds items in an array of large numbers", function(){
-
-  });
-  it("returns null when the item is not found", function(){
-
+   it("returns null when the item is not found", function(){
+    expect(searchAlgorithms.binarySearch(decimalArr,-1)).toEqual(-1);
   });
 });

@@ -1,7 +1,9 @@
-exports.linearSearch = function(val, arr){
+Array.prototype.linearSearch = function(val){
 
 };
 
-exports.binarySearch = function(val, arr){
+Array.prototype.binarySearch = function(val){
 
 };
+
+module.exports = { Array };
